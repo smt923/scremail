@@ -17,7 +17,6 @@ var (
 	urlArg       = kingpin.Arg("url", "URL of website.").Required().String()
 	usernameFlag = kingpin.Flag("username", "Output just usernames instead of full emails.").Short('u').Bool()
 	domainFlag   = kingpin.Flag("domain", "Output just domains instead of full emails.").Short('d').Bool()
-	threadsflag  = kingpin.Flag("threads", "Number of threads to use, default: 1.").Short('t').Default("1").Int()
 )
 
 func main() {
